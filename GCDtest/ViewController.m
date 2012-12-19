@@ -37,7 +37,8 @@
         
         NSLog(@"[BACKGROUND THREAD][FINISH] do something in background");
     });
-    
+   
+    dispatch_release(queue);
     NSLog(@"[FINISH] BTN Pressed");
 }
 
